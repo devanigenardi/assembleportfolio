@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: #000000;
+  --aqua:  #5DC2A7;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--white);
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+section.full {
+  max-width: 100%;
+}
+
+section.aqua {
+  background-color: var(--aqua);
+
+  -webkit-filter: drop-shadow(1px 3px 1px rgba(0,0,0,.2));
+  filter: drop-shadow(1px 3px 1px rgba(0,0,0,.2));
+}
+
+.active span {
+  position: relative;
+}
+
+.active span::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  background-color: var(--white);
+}
+
+.active span::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 0 20px 28px 20px;
+  border-color: transparent transparent #5DC2A7 transparent;
+  rotate: 180deg;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 40px;
+  top: 51px;
+}
+
+/* hamburguer menu */
+
+@media only screen and (max-width: 768px){
+  ul.un-active-nav {
+    width: 100vw;
+    left: -100vw;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  ul.active-nav {
+    width: 100vw;
+    left: 0vw;
+    position: absolute;
+    transition: 0.5s;
+  }
+}
+
+.menuIconToggle {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  z-index: 40;
+  top: 12px;
+  right: 15px;
+  width: 22px;
+  height: 19px;
+  transition: all 0.3s;
+}
+
+.hamb-line {
+  position: absolute;
+  height: 3px;
+  width: 22px;
+  background-color: var(--white);
+  transition: all 0.25s;
+  padding: 0;
+}
+
+.dia.p-1 {
+  position: absolute;
+  transition: all .25s;
+  top: 0px;
+}
+
+.hor {
+    transition: all 0.3s;
+    position: absolute;
+    top: 8px;
+}
+
+.dia.p-2 {
+  box-sizing: border-box;
+  position: absolute;
+  transition: all .25s;
+  bottom: 0px;
+}
+
