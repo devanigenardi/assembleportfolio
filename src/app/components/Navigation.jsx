@@ -26,7 +26,7 @@ export function Navigation() {
   const [activeNav, setActiveNav] = useState(false); 
   const pathname = usePathname();
 
-  activeNav ? document.body.style.overflow = "hidden":document.body.style.overflow="auto";
+  // activeNav ? document.body.style.overflow = "hidden":document.body.style.overflow="auto";
 
   return (
     <section className="full aqua">
