@@ -99,6 +99,10 @@ section.aqua {
     position: absolute;
     transition: 0.5s;
   }
+
+  .active span::after {
+    display: none;
+  }
 }
 
 .menuIconToggle {

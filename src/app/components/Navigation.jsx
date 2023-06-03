@@ -30,10 +30,8 @@ export function Navigation() {
     activeNav ? document.body.style.overflow = "hidden" : document.body.style.overflow="auto";
   }
 
-
-
   return (
-    <section className="full aqua">
+    <section className="full aqua relative z-10">
         <nav className={`flex justify-between px-4 ${styles.nav}`}>
             <ul className={`w-full flex flex-col md:flex-row md:justify-around items-start ${activeNav ? "active-nav" : "un-active-nav"} ${styles.navigation}`}>
                 {links.map(({ label, route }) => (

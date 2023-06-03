@@ -116,7 +116,7 @@ function Navigation() {
     const pathname = (0,next_navigation__WEBPACK_IMPORTED_MODULE_2__.usePathname)();
     if (false) {}
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("section", {
-        className: "full aqua",
+        className: "full aqua relative z-10",
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("nav", {
             className: `flex justify-between px-4 ${(_Navigation_module_css__WEBPACK_IMPORTED_MODULE_4___default().nav)}`,
             children: [
