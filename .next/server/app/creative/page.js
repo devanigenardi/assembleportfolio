@@ -413,7 +413,8 @@ function visualdesign() {
         children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
             children: links.map(({ label , href  })=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                        className: "text-[16px] text-[#2A55A2] block underline mb-1",
+                        target: "_blank",
+                        className: "body-links text-[16px] text-[#2A55A2] mb-1",
                         href: href,
                         children: label
                     })
@@ -464,7 +465,8 @@ function microvideo() {
         children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
             children: MicroVideo_links.map(({ label , href  })=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                        className: "text-[16px] text-[#2A55A2] block underline mb-1",
+                        target: "_blank",
+                        className: "body-links text-[16px] text-[#2A55A2] mb-1",
                         href: href,
                         children: label
                     })
@@ -507,7 +509,8 @@ function localization() {
         children: /*#__PURE__*/ jsx_runtime_.jsx("ul", {
             children: Localization_links.map(({ label , href  })=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
                     children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                        className: "text-[16px] text-[#2A55A2] block underline mb-1",
+                        target: "_blank",
+                        className: "body-links text-[16px] text-[#2A55A2] mb-1",
                         href: href,
                         children: label
                     })
@@ -591,7 +594,7 @@ function Creative() {
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [405,939,116], () => (__webpack_exec__(9315)));
+var __webpack_exports__ = __webpack_require__.X(0, [405,939,840], () => (__webpack_exec__(9315)));
 module.exports = __webpack_exports__;
 
 })();

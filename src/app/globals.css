@@ -60,6 +60,29 @@ section.aqua {
   top: 51px;
 }
 
+.body-links {
+  transition: 3s;
+  display: inline-block;
+  width: auto;
+  position: relative;
+}
+
+.body-links::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  background-color: #2A55A2;
+  opacity: 1;
+  transition: 0.4s;
+  bottom: 3px;
+  position: absolute;
+}
+
+.body-links:hover::before {
+  opacity: 0;
+}
+
 /* hamburguer menu */
 
 @media only screen and (max-width: 768px){

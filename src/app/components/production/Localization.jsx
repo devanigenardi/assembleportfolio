@@ -15,7 +15,7 @@ export default function localization(){
             <ul>
                 {links.map(({label, href}) => (
                     <li>
-                        <a className='text-[16px] text-[#2A55A2] block underline mb-1' href={href}>{label}</a>
+                        <a target="_blank"  className='body-links text-[16px] text-[#2A55A2] mb-1' href={href}>{label}</a>
                     </li>
                 ))}
             </ul>
